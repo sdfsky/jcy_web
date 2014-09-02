@@ -1,16 +1,226 @@
 <!DOCTYPE html>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
-<html>
+<html lang="zh-cn">
     <head>
-        <title>TODO supply a title</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width">
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>九彩鱼 - 想象• 编程• 分享</title>
+        <!-- Bootstrap -->
+        <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" />
+        <link href="css/main.css" rel="stylesheet">
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+          <script src="js/html5shiv.min.js"></script>
+          <script src="js/respond.min.js"></script>
+        <![endif]-->
+
     </head>
     <body>
-        <div>TODO write content</div>
+        <nav class="navbar navbar-fixed-top " role="navigation">
+            <div class="container">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <a class="header-logo" href="home.html"><img src="css/home_logo.png" alt="九彩鱼"/></a>
+                </div>
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="#">发现</a></li>
+                        <li><a href="#">讨论</a></li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#"><span class="glyphicon glyphicon-download-alt"></span> 客户端下载</a></li>
+                        <li><a href="#">加入九彩鱼社区</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-user"></span> sdf_sky</a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="profile.html"><span class="glyphicon glyphicon-cog"></span> 我的设置</a></li>
+                                <li><a href="project.html"><span class="glyphicon glyphicon-list"></span> 我的项目</a></li>
+                                <li class="divider"></li>
+                                <li><a href="#">退出</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="login.html">登录</a></li>
+                    </ul>
+                </div><!-- /.navbar-collapse -->
+            </div><!-- /.container-fluid -->
+        </nav>
+        <div class="container"  style="margin-top: 60px;">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading"><i class="fa fa-paper-plane-o"></i> 项目名称</div>
+                        <div class="panel-body">
+                            <div class="row">
+                                <div class="col-md-6" style="border-right:1px solid #e0e0e0;height:430px;">
+                                    <div id="jiucaiyu"></div>
+                                </div>
+                                <div class="col-md-6">
+                                    <p><ol class="breadcrumb"> <li>项目信息</li></ol></p>
+                                    <p>
+                                        作者：<a href="#">sdf_sky</a>
+                                        <span>18次查看</span>
+                                        <span>创建于2014年8月18日</span>
+                                    </p>
+                                    <p>标签：标签 测试工程</p>
+                                    <p><ol class="breadcrumb"> <li>工程介绍</li></ol></p>
+                                    <p class="info">
+                                        Update 01/08/2014:
+                                        Fixed some bugs involving size and drip colour
+                                        Added a highlight on the currently selected colour
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel-footer">
+                            <div class="bdsharebuttonbox"><a href="#" class="bds_more" data-cmd="more"></a><a title="分享到QQ空间" href="#" class="bds_qzone" data-cmd="qzone"></a><a title="分享到新浪微博" href="#" class="bds_tsina" data-cmd="tsina"></a><a title="分享到腾讯微博" href="#" class="bds_tqq" data-cmd="tqq"></a><a title="分享到人人网" href="#" class="bds_renren" data-cmd="renren"></a><a title="分享到微信" href="#" class="bds_weixin" data-cmd="weixin"></a><a title="分享到百度新首页" href="#" class="bds_bdhome" data-cmd="bdhome"></a><a title="分享到复制网址" href="#" class="bds_copy" data-cmd="copy"></a><a title="分享到打印" href="#" class="bds_print" data-cmd="print"></a></div>
+                            <script>window._bd_share_config = {"common": {"bdSnsKey": {}, "bdText": "", "bdMini": "2", "bdMiniList": false, "bdPic": "", "bdStyle": "0", "bdSize": "24"}, "share": {}};
+                                with (document)
+                                    0[(getElementsByTagName('head')[0] || body).appendChild(createElement('script')).src = 'http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion=' + ~(-new Date() / 36e5)];</script>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="panel panel-default">
+                        <div class="panel-heading"><i class="fa fa-comments"></i> 评论</div>
+                        <div class="panel-body">
+                            <form role="form">
+                                <textarea class="form-control" rows="3" placeholder="留下你的评论" name="comment"></textarea>
+                                <div class="form_btn">
+                                    <button type="submit" class="btn btn-primary">提交</button>
+                                    <button type="submit" class="btn btn-primary">取消</button>
+                                </div>
+                            </form>
+                            <div class="comment_box media">
+                                <a class="pull-left" href="#">
+                                    <img class="media-object" src="css/avatar.gif" alt="...">
+                                </a>
+                                <div class="media-body">
+                                    <h4 class="media-heading"><a href="#">sdf_sky</a></h4>
+                                    <p>很好很强大很好很强大很好很强大很好很强大很好很强大很好很强大很好很强大很好很强大很好很强大很好很强大很好很强大很好很强大</p>
+                                    <div class="media" style="border-top: 1px solid #e0e0e0;padding-top: 15px;">
+                                        <a class="pull-left" href="#">
+                                            <img class="media-object" src="css/avatar.gif" alt="...">
+                                        </a>
+                                        <div class="media-body">
+                                            <h4 class="media-heading"><a href="#">sdf_sky</a></h4>
+                                            <p>很好很强大很好很强大很好很强大很好很强大很好很强大很好很强大很好很强大很好很强大很好很强大很好很强大很好很强大很好很强大</p>
+                                            <div class="replybox">
+                                                <span class="reply_time">3小时前</span>
+                                                <a href="#" class="reply">回复</a>
+                                                <div class="mt15">
+                                                    <form role="form">
+                                                        <textarea class="form-control" rows="3" placeholder="留下你的评论" name="comment"></textarea>
+                                                        <div class="form_btn">
+                                                            <button type="submit" class="btn btn-primary">提交</button>
+                                                            <button type="submit" class="btn btn-primary">取消</button>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="media" style="border-top: 1px solid #e0e0e0;padding-top: 10px;">
+                                        <a class="pull-left" href="#">
+                                            <img class="media-object" src="css/avatar.gif" alt="...">
+                                        </a>
+                                        <div class="media-body">
+                                            <h4 class="media-heading"><a href="#">sdf_sky</a><span style="float: right;">3小时前</span></h4>
+                                            <p>很好很强大很好很强大很好很强大很好很强大很好很强大很好很强大很好很强大很好很强大很好很强大很好很强大很好很强大很好很强大</p>
+                                            <div class="replybox">
+                                                <span class="reply_time">3小时前</span>
+                                                <a href="#" class="reply">回复</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="media" style="border-top: 1px solid #e0e0e0;padding-top: 15px;">
+                                <a class="pull-left" href="#">
+                                    <img class="media-object" src="css/avatar.gif" alt="...">
+                                </a>
+                                <div class="media-body">
+                                    <h4 class="media-heading"><a href="#">sdf_sky</a></h4>
+                                    <p>很好很强大很好很强大很好很强大很好很强大很好很强大很好很强大很好很强大很好很强大很好很强大很好很强大很好很强大很好很强大</p>
+                                    <div class="replybox">
+                                        <span class="reply_time">3小时前</span>
+                                        <a href="#" class="reply">回复</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="panel panel-default">
+                        <div class="panel-heading"><i class="fa fa-bookmark-o"></i> 相关工程</div>
+                        <div class="panel-body">
+                            <div class="media">
+                                <a class="pull-left" href="#">
+                                    <img class="media-object" src="css/demo_project.png" alt="...">
+                                </a>
+                                <div class="media-body">
+                                    <h4 class="media-heading">工程名称</h4>
+                                    工程简介
+                                </div>
+                            </div>
+                            <div class="media">
+                                <a class="pull-left" href="#">
+                                    <img class="media-object" src="css/demo_project.png" alt="...">
+                                </a>
+                                <div class="media-body">
+                                    <h4 class="media-heading">工程名称</h4>
+                                    工程简介
+                                </div>
+                            </div>
+                            <div class="media">
+                                <a class="pull-left" href="#">
+                                    <img class="media-object" src="css/demo_project.png" alt="...">
+                                </a>
+                                <div class="media-body">
+                                    <h4 class="media-heading">工程名称</h4>
+                                    工程简介
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="footer">
+            <div class="container" style="padding: 15px;text-align: center;">
+                <p>关于我们 | 联系我们 | 意见反馈 | 服务条款</p>
+            </div>
+        </div>	
+
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="js/jquery.min.js"></script>
+        <script type="text/javascript" src="js/swfobject.js"></script>
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="bootstrap/js/bootstrap.min.js"></script>
+        <script type="text/javascript">
+        function handleEmbedStatus(e) {
+            if (!e.success) {
+                alert("error");
+            }
+        }
+        // The flashvars tell flash about the project data (and autostart=true)
+        var flashvars = {
+            project: 'http://192.168.1.101/jcy_web/clone.sb2&autostart=false'
+        };
+        var params = {
+            autostart: 'false',
+            allowscriptaccess: 'always',
+            allowfullscreen: 'true',
+            wmode: 'direct',
+            menu: 'false'
+        };
+        swfobject.embedSWF("http://192.168.1.101/jcy_web/Scratch_player.swf", "jiucaiyu", "100%", "100%", "10.2.0", "http://192.168.1.101/jcy_web/js/expressInstall.swf", flashvars, params, null, handleEmbedStatus);
+        </script>
     </body>
 </html>

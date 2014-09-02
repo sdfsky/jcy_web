@@ -49,71 +49,39 @@
             <div class="row">
                 <div class="col-md-3">
                     <div class="list-group">
-                        <a href="profile.html" class="list-group-item active">我的设置</a>
-                        <a href="myproject.html" class="list-group-item">我的项目</a>
+                        <a href="#" class="list-group-item active">我的设置</a>
+                        <a href="#" class="list-group-item">我的项目</a>
                     </div>
                 </div>
                 <div class="col-md-9">
                     <ul class="nav nav-tabs" role="tablist">
-                        <li role="presentation" class="active"><a href="profile.html">我的资料</a></li>
-                        <li role="presentation"><a href="changeavatar.html">修改改头像</a></li>
+                        <li role="presentation"><a href="profile.html">我的资料</a></li>
+                        <li role="presentation"   class="active"><a href="changeavatar.html">修改改头像</a></li>
                         <li role="presentation"><a href="changepass.html">修改密码</a></li>
                     </ul>
-                    <form class="form-horizontal" role="form" style="margin-top: 20px;">
-                        <div class="form-group">
-                            <label for="inputEmail3" class="col-sm-2 control-label">用户名</label>
-                            <div class="col-sm-4">
-                                <p class="form-control-static">email@example.com</p>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label for="inputEmail3" class="col-sm-2 control-label">邮箱</label>
-                            <div class="col-sm-4">
-                                <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label for="inputEmail3" class="col-sm-2 control-label">性别</label>
-                            <div class="col-sm-4">
-                                <label class="radio-inline">
-                                    <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> 男
-                                </label>
-                                <label class="radio-inline">
-                                    <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> 女
-                                </label>
-                                <label class="radio-inline">
-                                    <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> 保密
-                                </label>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label for="inputEmail3" class="col-sm-2 control-label">所在城市</label>
-                            <div class="col-sm-2">
-                                <select class="form-control">...</select>
-                            </div>
-                            <div class="col-sm-2">
-                                <select class="form-control">...</select>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label for="inputEmail3" class="col-sm-2 control-label">联系地址</label>
-                            <div class="col-sm-4">
-                                <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label for="qq" class="col-sm-2 control-label">qq</label>
-                            <div class="col-sm-4">
-                                <input type="qq" class="form-control" id="qq" placeholder="Email">
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <div class="col-sm-offset-2 col-sm-4">
-                                <button type="submit" class="btn btn-primary">保存修改</button>
-                            </div>
-                        </div>
-                    </form>
 
+                    <ol style="margin-top: 20px;">
+                        <li>支持jpg、gif、png、jpeg四种格式图片上传</li>
+                        <li>图片大小不能超过2M</li>
+                        <li>图片长宽大于80*80px时系统将自动压缩</li>
+                    </ol>
+                    <div class="col-sm-6 col-md-2">
+                        <div class="thumbnail">
+                            <img src="css/avatar.gif" alt="...">
+                            <div class="caption">
+                                <form  role="form">
+                                    <div class="form-group">
+                                        <input type="file" id="exampleInputFile">
+                                    </div>     
+                                    <div class="form-group">
+                                        <div class="col-sm-offset-2 col-sm-4">
+                                            <button type="submit" class="btn btn-primary">保存修改</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
